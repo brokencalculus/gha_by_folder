@@ -1,8 +1,14 @@
 name: folder_1_action
 
-on: [push] 
-  paths: 
-    - "folder_1"
+# on: [push] 
+#   paths: 
+#     - "folder_1"
+
+on:
+  push:
+    branches:
+      - 'releases/**'
+      - '!releases/**-alpha'
 
 jobs: 
   check-bats-version: 
