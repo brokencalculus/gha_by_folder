@@ -1,11 +1,7 @@
 name: folder_1_action
 
 on: [push] 
-  # push:
-  #   branches:
-  #     - main
-  paths:
-    - folder_1
+  paths: ["folder_1"]
 
 jobs: 
   check-bats-version: 
