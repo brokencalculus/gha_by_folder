@@ -1,0 +1,14 @@
+name: folder_2_action
+
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - folder_2
+
+jobs: 
+  check-bats-version: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - run: echo "running some github action job for folder 2"
